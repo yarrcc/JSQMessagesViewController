@@ -25,6 +25,7 @@ FOUNDATION_EXPORT const unsigned char JSQMessagesViewControllerVersionString[];
 #import <JSQMessagesViewController/JSQMessagesCollectionViewFlowLayout.h>
 #import <JSQMessagesViewController/JSQMessagesCollectionViewLayoutAttributes.h>
 #import <JSQMessagesViewController/JSQMessagesCollectionViewFlowLayoutInvalidationContext.h>
+#import <JSQMessagesViewController/JSQAudioMediaViewAttributes.h>
 
 //  Toolbar
 #import <JSQMessagesViewController/JSQMessagesComposerTextView.h>
