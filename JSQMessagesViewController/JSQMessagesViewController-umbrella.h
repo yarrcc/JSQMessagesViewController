@@ -39,6 +39,7 @@ FOUNDATION_EXPORT const unsigned char JSQMessagesViewControllerVersionString[];
 #import <JSQMessagesViewController/JSQPhotoMediaItem.h>
 #import <JSQMessagesViewController/JSQLocationMediaItem.h>
 #import <JSQMessagesViewController/JSQVideoMediaItem.h>
+#import <JSQMessagesViewController/JSQAudioMediaItem.h>
 
 #import <JSQMessagesViewController/JSQMessagesBubbleImage.h>
 #import <JSQMessagesViewController/JSQMessagesAvatarImage.h>

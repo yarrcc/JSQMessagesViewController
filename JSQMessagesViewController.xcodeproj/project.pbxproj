@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D82167B11E420FCB0075C9B5 /* JSQAudioMediaItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D82167AF1E420FCB0075C9B5 /* JSQAudioMediaItem.h */; };
+		D82167B11E420FCB0075C9B5 /* JSQAudioMediaItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D82167AF1E420FCB0075C9B5 /* JSQAudioMediaItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D82167B21E420FCB0075C9B5 /* JSQAudioMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D82167B01E420FCB0075C9B5 /* JSQAudioMediaItem.m */; };
-		D82167B51E420FD80075C9B5 /* JSQAudioMediaViewAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = D82167B31E420FD80075C9B5 /* JSQAudioMediaViewAttributes.h */; };
+		D82167B51E420FD80075C9B5 /* JSQAudioMediaViewAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = D82167B31E420FD80075C9B5 /* JSQAudioMediaViewAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D82167B61E420FD80075C9B5 /* JSQAudioMediaViewAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = D82167B41E420FD80075C9B5 /* JSQAudioMediaViewAttributes.m */; };
 		D8BE3F731DDB229D00DD8600 /* JSQMessagesViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8BE3F711DDB229D00DD8600 /* JSQMessagesViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8BE3FD81DDB22FF00DD8600 /* JSQMessagesAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D8BE3F7A1DDB22FF00DD8600 /* JSQMessagesAssets.bundle */; };
