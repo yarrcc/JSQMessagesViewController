@@ -112,6 +112,18 @@
     _cachedMediaView = nil;
 }
 
+- (void)stopSound {
+    if (self.playButton) {
+        self.playButton.selected = NO;
+    }
+    
+    [self stopProgressTimer];
+    
+    if (self.audioPlayer) {
+        [self.audioPlayer stop];
+    }
+}
+
 #pragma mark - Private
 
 - (void)startProgressTimer
@@ -175,9 +187,7 @@
     }
 
     if (self.audioPlayer.playing) {
-        self.playButton.selected = NO;
-        [self stopProgressTimer];
-        [self.audioPlayer stop];
+        [self stopSound];
     }
     else {
         // fade the button from play to pause

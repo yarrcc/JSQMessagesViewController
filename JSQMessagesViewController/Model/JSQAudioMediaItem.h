@@ -114,6 +114,8 @@ didChangeAudioCategory:(NSString *)category
  */
 - (void)setAudioDataWithUrl:(nonnull NSURL *)audioURL;
 
+- (void)stopSound;
+
 @end
 
 NS_ASSUME_NONNULL_END
