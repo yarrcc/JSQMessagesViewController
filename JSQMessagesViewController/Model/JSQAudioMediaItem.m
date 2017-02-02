@@ -120,7 +120,10 @@
     [self stopProgressTimer];
     
     if (self.audioPlayer) {
-        [self.audioPlayer stop];
+        if (self.audioPlayer.isPlaying) {
+            [self.audioPlayer pause];
+        }
+        self.audioPlayer.currentTime = 0.0;
     }
 }
 
@@ -187,7 +190,9 @@
     }
 
     if (self.audioPlayer.playing) {
-        [self stopSound];
+        self.playButton.selected = NO;
+        [self stopProgressTimer];
+        [self.audioPlayer stop];
     }
     else {
         // fade the button from play to pause
