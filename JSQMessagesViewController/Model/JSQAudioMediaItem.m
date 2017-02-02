@@ -90,6 +90,8 @@
 
     _cachedMediaView = nil;
     [super clearCachedMediaViews];
+    
+    [self.delegate audioMediaItemFinishedPlaying:self];
 }
 
 #pragma mark - Setters
@@ -178,6 +180,8 @@
         self.playButton.selected = NO;
         [self stopProgressTimer];
         [self.audioPlayer stop];
+        
+        [self.delegate audioMediaItemFinishedPlaying:self];
     }
     else {
         // fade the button from play to pause
@@ -191,6 +195,8 @@
 
         [self startProgressTimer];
         [self.audioPlayer play];
+        
+        [self.delegate audioMediaItemStartedPlaying:self];
     }
 }
 
@@ -199,6 +205,8 @@
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player
                        successfully:(BOOL)flag {
 
+    [self.delegate audioMediaItemFinishedPlaying:self];
+    
     // set progress to full, then fade back to the default state
     [self stopProgressTimer];
     self.progressView.progress = 1;

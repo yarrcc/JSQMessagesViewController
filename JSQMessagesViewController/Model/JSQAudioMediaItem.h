@@ -35,6 +35,9 @@ didChangeAudioCategory:(NSString *)category
                options:(AVAudioSessionCategoryOptions)options
                  error:(nullable NSError *)error;
 
+- (void)audioMediaItemStartedPlaying:(JSQAudioMediaItem *)audioMediaItem;
+- (void)audioMediaItemFinishedPlaying:(JSQAudioMediaItem *)audioMediaItem;
+
 @end
 
 
