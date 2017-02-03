@@ -204,9 +204,6 @@
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player
                        successfully:(BOOL)flag {
-
-    [self.delegate audioMediaItemFinishedPlaying:self];
-    
     // set progress to full, then fade back to the default state
     self.progressView.progress = 1;
     [UIView transitionWithView:self.cachedMediaView
@@ -218,7 +215,9 @@
                         self.progressLabel.text = [self timestampString:self.audioPlayer.duration
                                                             forDuration:self.audioPlayer.duration];
                     }
-                    completion:nil];
+                    completion:^(BOOL finished) {
+                        [self.delegate audioMediaItemFinishedPlaying:self];
+                    }];    
 }
 
 #pragma mark - JSQMessageMediaData protocol
