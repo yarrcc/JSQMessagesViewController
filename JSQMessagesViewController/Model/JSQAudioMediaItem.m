@@ -177,10 +177,7 @@
     }
 
     if (self.audioPlayer.playing) {
-        self.playButton.selected = NO;
-        [self.audioPlayer stop];
-        
-        [self.delegate audioMediaItemFinishedPlaying:self];
+        [self stopSound];
     }
     else {
         // fade the button from play to pause
@@ -198,6 +195,13 @@
 
         [self startProgressTimer];
     }
+}
+
+- (void)stopSound {
+    self.playButton.selected = NO;
+    [self.audioPlayer stop];
+    
+    [self.delegate audioMediaItemFinishedPlaying:self];
 }
 
 #pragma mark - AVAudioPlayerDelegate
